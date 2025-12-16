@@ -31,6 +31,7 @@ services:
       - PORT=8080
       - REDIS_URL=redis://redis:6379
       - FRONTEND_URL=http://localhost
+      - TELEGRAM_API_URL=http://api_server:8000
     depends_on:
       redis:
         condition: service_healthy
